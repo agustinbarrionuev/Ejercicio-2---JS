@@ -132,4 +132,5 @@ const showAlert = (message) => {
 const reset = () => {
   h2.innerHTML = "";
   h4.innerHTML = "";
+  inputContainer.classList.remove("success-border")
 };
