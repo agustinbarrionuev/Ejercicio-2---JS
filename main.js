@@ -8,7 +8,7 @@ const inputContainer = document.querySelector("form")
 const pizzas = [
   {
     id: 1,
-    name: "Mozzarella",
+    name: "Mozzarella XL",
     ingredientes: [
       "salsa de tomate",
       "queso mozzarella",
@@ -19,24 +19,24 @@ const pizzas = [
   },
   {
     id: 2,
-    name: "Napolitana",
+    name: "Champiñones",
     ingredientes: [
-      "salsa de tomate",
+      "champiñones",
       "queso mozzarella",
       "albahaca",
       "aceite de oliva",
     ],
-    price: 1400,
+    price: 1500,
   },
   {
     id: 3,
-    name: "Fugazza",
+    name: "Fugazzetta",
     ingredientes: ["queso mozzarella", "cebolla", "orégano", "aceitunas"],
-    price: 1400,
+    price: 1300,
   },
   {
     id: 4,
-    name: "Cuatro Quesos",
+    name: "Cuatro Quesos (Autor)",
     ingredientes: [
       "salsa de tomate",
       "queso mozzarella",
@@ -44,11 +44,11 @@ const pizzas = [
       "queso fontina",
       "queso parmesano",
     ],
-    price: 1900,
+    price: 2000,
   },
   {
     id: 5,
-    name: "Especial",
+    name: "Especial con Huevo",
     ingredientes: [
       "salsa de tomate",
       "queso mozzarella",
@@ -57,19 +57,19 @@ const pizzas = [
       "morrones",
       "aceitunas",
     ],
-    price: 1500,
+    price: 1600,
   },
   {
     id: 6,
-    name: "Rúcula y Jamón",
+    name: "Cebolla y Jamón",
     ingredientes: [
       "salsa de tomate",
       "queso mozzarella",
       "jamón crudo",
-      "rúcula",
+      "Cebolla",
       "aceitunas",
     ],
-    price: 1600,
+    price: 1700,
   },
 ];
 btnSend.addEventListener("click", sendId);
@@ -80,7 +80,7 @@ function sendId(e) {
   const pizzaId = parseInt(input.value);
   //Si intenta enviar sin poner nada en el input
   if (!pizzaId) {
-    showAlert("Ingrese un ID para continuar");
+    showAlert("Ingrese un ID para continuar (desde 1 hasta 6)");
     reset();
     return; // no va a pasar al siguiente codigo hasta que cumpla la condicion
   }
@@ -101,6 +101,8 @@ const renderPizza = (pizza) => {
   h2.innerHTML = `<span class= "name-price">Nombre: </span>${  name}`;
   //Inyecto el price en el h4
   h4.innerHTML = `<span class= "name-price">Precio: </span>$${  price}`;
+  inputContainer.classList.add("success-border")
+  
 };
 
 // crear la alerta
