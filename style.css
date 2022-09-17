@@ -117,3 +117,7 @@ width: 30%;
   .alert-border {
     border: red 5px solid;
   }
+
+.success-border {
+    border: greenyellow 5px solid;
+  }
