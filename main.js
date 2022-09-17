@@ -48,7 +48,7 @@ const pizzas = [
   },
   {
     id: 5,
-    name: "Especial con Huevo",
+    name: "Especial",
     ingredientes: [
       "salsa de tomate",
       "queso mozzarella",
