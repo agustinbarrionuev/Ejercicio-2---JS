@@ -36,7 +36,7 @@ const pizzas = [
   },
   {
     id: 4,
-    name: "Cuatro Quesos (Autor)",
+    name: "Cuatro Quesos",
     ingredientes: [
       "salsa de tomate",
       "queso mozzarella",
@@ -61,7 +61,7 @@ const pizzas = [
   },
   {
     id: 6,
-    name: "Cebolla y Jamón",
+    name: "Cebolla-Jamón",
     ingredientes: [
       "salsa de tomate",
       "queso mozzarella",
