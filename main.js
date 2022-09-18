@@ -93,6 +93,7 @@ function sendId(e) {
   //Pasa todas las validaciones y busco la pizza que tenga el id igual al valor del input
   const result = pizzas.find((pizza) => pizza.id === pizzaId);
   renderPizza(result); //a la pizza encontrada la muestro en pantalla
+  setTimeout(reset,3000)
 }
 //Renderizar en pantalla
 const renderPizza = (pizza) => {
