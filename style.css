@@ -9,7 +9,7 @@ body {
 .container-text {
     color: rgb(206, 174, 250);
     font-size: 23px;
-    width: 40%;
+    width: 70%;
     max-width: 1000px;
     height: 20px;
     margin-top: 20px;
@@ -49,6 +49,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .div-container {
     width: 100%;
