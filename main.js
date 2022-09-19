@@ -85,7 +85,7 @@ function sendId(e) {
     return; // no va a pasar al siguiente codigo hasta que cumpla la condicion
   }
   //Si intenta enviar un numero mayor o menor a los id que tienen las pizzas mi array 'pizzas'
-  if else(pizzaId <= 0 || pizzaId > pizzas.length) {
+  if (pizzaId <= 0 || pizzaId > pizzas.length) {
     showAlert("Seleccioná un ID válido (desde 1 hasta 6)");
     reset();
     return; // no va a pasar al siguiente codigo hasta que cumpla la condicion
